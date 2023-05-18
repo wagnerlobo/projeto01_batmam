@@ -82,7 +82,7 @@ li:hover {
 
     width: 50%;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     justify-content: space-between;
     margin-left: 30px;
 
@@ -121,3 +121,156 @@ li:hover {
     background-color: #fff;
     color: #000;
 }
+
+.actor-cards-container {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card-content {
+
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kadan thmor pro', sans-serif;
+}
+
+.banner-1 {
+
+    background-image: url(https://wallpapercave.com/wp/wp5784505.jpg);
+}
+
+.banner-2 {
+
+    background-image: url(https://s2.glbimg.com/lJEJ_rnqoTSiKQ542pPpVphEgOM=/e.glbimg.com/og/ed/f/original/2021/12/31/zoe_kravitz_catwoman.jpeg);
+}
+
+.banner-3 {
+
+    background-image: url(https://www.looper.com/img/gallery/the-best-gordon-scene-in-the-batman-according-to-fans/intro-1646591550.jpg);
+}
+
+.card:hover {
+
+    transform: scale(1.02);
+}
+
+footer {
+
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+
+    color: #fff;
+    font-family: 'kadan thmor pro', sans-serif;
+} 
+
+.footer-navigation {
+
+    display: none;
+}
+
+footer #logo {
+
+    height: 90px;
+}
+
+.footer-list {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 760px) {
+
+    .footer-navigation {
+
+        display: block;
+    }
+    
+    nav {
+
+        display: none;
+    }
+
+    #banner {
+
+        background-position: 40%;
+    }
+
+    #trailer-container {
+
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .content {
+
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+
+        width: 100%;
+    }
+
+    .sinopse {
+
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+
+        width: 100%;
+    }
+
+    .btn {
+
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .card-content {
+
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
+
